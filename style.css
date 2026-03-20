@@ -1,0 +1,188 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8faff;
+    overflow-x: hidden;
+}
+
+.text-blue { color: #4477FF; }
+.bg-blue { background-color: #4477FF; }
+
+/* Navbar Styles */
+.nav-logo-img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+.navbar {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #444 !important;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #4477FF !important;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: calc(100vh - 90px);
+    padding: 50px 0;
+}
+
+.display-1 { font-size: 5rem; line-height: 1; }
+.display-2 { font-size: 4.5rem; line-height: 1; }
+
+.btn-blue {
+    background-color: #4477FF;
+    color: white;
+    padding: 14px 45px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+.btn-blue:hover {
+    background-color: #335acc;
+    transform: translateY(-5px);
+    color: white;
+    box-shadow: 0 10px 20px rgba(68, 119, 255, 0.3);
+}
+
+/* Social Icons */
+.social-links a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.social-links a:hover { 
+    color: #4477FF; 
+    transform: translateY(-3px);
+}
+
+/* Blob Image Section */
+.blob-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.blob-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    background-color: #4477FF;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    z-index: 1;
+    animation: blobAnimate 8s infinite ease-in-out;
+}
+
+/* ব্লব শেপটি যাতে একটু নড়াচড়া করে তার জন্য অ্যানিমেশন */
+@keyframes blobAnimate {
+    0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+    50% { border-radius: 60% 40% 30% 70% / 50% 60% 40% 60%; }
+}
+
+.hero-img {
+    position: relative;
+    z-index: 2;
+    width: 85%; 
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Education Cards Styling */
+.education-card {
+    transition: 0.4s ease;
+    border-bottom: 4px solid transparent !important;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    border-bottom: 4px solid #4477FF !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08) !important;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(68, 119, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.bg-soft-blue { background-color: rgba(68, 119, 255, 0.1); }
+
+/* Work Card Styling */
+.work-card {
+    transition: 0.4s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.work-card img {
+    transition: 0.5s;
+    height: 250px;
+    object-fit: cover;
+}
+
+.work-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.work-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact Items */
+.contact-item {
+    transition: 0.3s;
+    min-width: 250px;
+}
+.contact-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .hero-section { text-align: center !important; }
+    .display-1 { font-size: 3.5rem; }
+    .display-2 { font-size: 3rem; }
+    .blob-wrapper { max-width: 320px; margin-top: 30px; }
+    .social-links a { margin: 0 10px; }
+}
