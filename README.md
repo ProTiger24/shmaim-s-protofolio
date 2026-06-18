@@ -22,8 +22,9 @@ The main purpose of this project is to present a professional online portfolio f
 ## 🛠️ Technologies Used
 - HTML
 - CSS
-- JavaScript (if used)
-- Bootstrap (optional)
+- JavaScript
+
+- This is a simple Portfolio
 
 ---
 
