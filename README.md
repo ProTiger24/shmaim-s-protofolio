@@ -24,7 +24,7 @@ The main purpose of this project is to present a professional online portfolio f
 - CSS
 - JavaScript
 
-- This is a simple Portfolio
+
 
 ---
 
