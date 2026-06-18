@@ -32,10 +32,7 @@ This portfolio represents a Civil Engineer with 5 years of experience in differe
 
 ---
 
-## 📷 Screenshots
-(Add screenshots here if available)
 
----
 
 ## 🚀 Project Status
 Completed and uploaded for demonstration purposes.
